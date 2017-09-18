@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="ja")
+  head
+    link(href="" rel="canonical")
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    
+    include ./includes/head/_seo-includes.pug
+      
+    link(rel="icon", href="favicon.ico")
+
+    // カスタムスタイル（minifiedバージョン）
+    link(rel="stylesheet", href="./assets/css/main.css")
+      
+  body
+    .nojs This site require JavaScript for a better user experience.
+    
+    //ヘッダー
+    include ./includes/_header.pug
+    //ヘッダー　終
+    
+    main
+      //Aboutセクション
+      include ./includes/main/_about.pug
+      //Aboutセクション　終
+     
+      
+    //フッター
+    include ./includes/_footer.pug
+    //フッター　終
+
+    //jQuery
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    //メインカスタム JS（minifiedバージョン）
+    script(src="./assets/js/main.js")

@@ -1,0 +1,31 @@
+/* カスタムボータンのスタイル
+a.button, input.btn, button.btn
+  background:none
+  border:none
+  display: block
+  vertical-align: middle
+  max-width: 260px
+  text-decoration: none
+  color: white
+  padding: 1em 2em
+  letter-spacing: 0.1em
+  transition: all 300ms
+  border-radius: 5px
+  cursor: pointer
+  word-wrap: break-word
+  white-space: normal
+
+/* カスタムボータンのhoverスタイル
+.btn-bicolor
+  &:hover
+    background-color: white
+    transition-property: background-color
+    transition-duration: 0.2s
+    transition-timing-function: ease-out
+
+/* カスタムボータンの緑バージョン
+.btn-bicolor-green
+  background-color: $green
+  &:hover
+    color: $green
+    box-shadow: 0px 0px 0px 1px $green, 0px 0px 2px 3px rgba(0,0,0,0.1)
