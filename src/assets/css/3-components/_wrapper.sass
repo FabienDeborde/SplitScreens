@@ -1,0 +1,48 @@
+#wrapper
+  position: relative
+  width: 100%
+  min-height: 55vw
+  overflow: hidden
+  .layer
+    position: absolute
+    width: 100vw
+    min-height: inherit
+    overflow: hidden
+    &.bottom
+      background-color: #222
+      z-index: 1
+      .content-body
+        right: 5%
+        h1
+          color: #fdab00
+    &.top
+      background-color: #eee
+      transform: skew(-30deg)
+      margin-left: -1000px
+      width: calc(50vw + 1000px)
+      z-index: 2
+      .content-wrap
+        transform: skew(30deg)
+        margin-left: 1000px
+        .content-body
+          color: #222
+          left: 5%
+    .content-wrap
+      position: absolute
+      width: 100vw
+      min-height: 55vw
+      color: white
+      .content-body
+        width: 25%
+        position: absolute
+        top: 50%
+        text-transform: center
+        transform: translateY(-50%)
+        h1
+          font-size: 2em
+      img
+        position: absolute
+        width: 35%
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)

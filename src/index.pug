@@ -10,27 +10,24 @@ html(lang="ja")
       
     link(rel="icon", href="favicon.ico")
 
-    // カスタムスタイル（minifiedバージョン）
     link(rel="stylesheet", href="./assets/css/main.css")
       
   body
-    .nojs This site require JavaScript for a better user experience.
-    
-    //ヘッダー
-    include ./includes/_header.pug
-    //ヘッダー　終
-    
-    main
-      //Aboutセクション
-      include ./includes/main/_about.pug
-      //Aboutセクション　終
-     
+    section#wrapper.skewed
+      .layer.bottom
+        .content-wrap
+          .content-body
+            h1 Look Sharp
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure hic, dignissimos maiores eum, doloremque enim architecto repellendus minus quaerat maxime!
+          <img src="./assets/img/pc1.png" alt="">
+            
+      .layer.top
+        .content-wrap
+          .content-body
+            h1 Stay Cool
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure hic, dignissimos maiores eum, doloremque enim architecto repellendus minus quaerat maxime!
+          <img src="./assets/img/pc2.png" alt="">
       
-    //フッター
-    include ./includes/_footer.pug
-    //フッター　終
-
-    //jQuery
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-    //メインカスタム JS（minifiedバージョン）
+      .handle
+    
     script(src="./assets/js/main.js")
